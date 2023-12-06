@@ -157,6 +157,7 @@
   /* container 4  */
   .container-4 {
     flex-direction: column;
+    gap: 0;
   }
   .container-4 .right-content {
     margin-top: 40px;

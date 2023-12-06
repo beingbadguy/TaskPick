@@ -1,3 +1,16 @@
+const counter = document.querySelector("#counter");
+let count = 0;
+setInterval(() => {
+  count++;
+  counter.innerHTML = count + "%";
+  if (count == 100) {
+    counter.style.fontSize = "30px";
+    gsap.to(".main", {
+      translateY: "-100%",
+    });
+  }
+}, 30);
+
 const roller = document.getElementById("roller");
 const Button = document.getElementById("myButton");
 
@@ -61,6 +74,4 @@ close.addEventListener("click", () => {
   list.style.transform = "translateY(-700px)";
 });
 
-
-
-// gsap 
+// gsap
