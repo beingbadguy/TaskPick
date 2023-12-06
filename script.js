@@ -8,8 +8,11 @@ setInterval(() => {
     gsap.to(".main", {
       translateY: "-100%",
     });
+    document.body.style.overflow = "auto";
   }
 }, 30);
+
+console.log(document.body);
 
 const roller = document.getElementById("roller");
 const Button = document.getElementById("myButton");
